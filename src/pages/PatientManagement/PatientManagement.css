@@ -1,0 +1,63 @@
+.PatientManagementPage {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    padding: 50px;
+}
+
+.PatientManagementPage h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.PatientManagementPage ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.PatientManagementPage li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.PatientManagementPage li strong {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.PatientManagementPage button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.PatientManagementPage button:hover {
+    background-color: #2980b9;
+}
+
+.PatientManagementPage button:last-child {
+    background-color: green;
+}
+
+.PatientManagementPage button:last-child:hover {
+    background-color: rgb(16, 182, 16);
+}
+
+@media screen and (max-width: 980px) {
+    .PatientManagementPage {
+        padding: 40px 10px;
+    }
+}

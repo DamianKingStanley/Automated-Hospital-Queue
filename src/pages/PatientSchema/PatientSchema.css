@@ -1,0 +1,77 @@
+/* PatientSchema.css */
+
+.PatientSchemaPage {
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.PatientSchemaPage h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.PatientSchemaPage .error-message {
+    color: red;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.PatientSchemaPage .table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.PatientSchemaPage .date-group {
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.PatientSchemaPage .date-group h3 {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.PatientSchemaPage .patient-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.PatientSchemaPage .patient-table thead {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.PatientSchemaPage .patient-table th,
+.PatientSchemaPage .patient-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.PatientSchemaPage .patient-table th {
+    font-weight: bold;
+}
+
+.PatientSchemaPage .patient-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.PatientSchemaPage .patient-table tbody tr:hover {
+    background-color: #f1f1f1;
+}

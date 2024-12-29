@@ -1,0 +1,103 @@
+.PatientRegistrationPage {
+    background-image: url(../../assets/hospitalbk5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.PatientRegistrationPage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Darken background */
+    z-index: 1;
+}
+
+.PatientRegistrationPage form {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PatientRegistrationPage form input,
+.PatientRegistrationPage form select,
+.PatientRegistrationPage form button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.PatientRegistrationPage form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.PatientRegistrationPage form button:hover {
+    background-color: #0056b3;
+}
+
+.PatientRegistrationPage form label {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.PatientRegistrationPage form select {
+    background-color: white;
+    color: #333;
+}
+
+.loader {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin-top: 10px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    z-index: 100;
+}
+
+.success-message {
+    color: green;
+    margin-top: 10px;
+    font-size: 14px;
+    z-index: 100;
+}

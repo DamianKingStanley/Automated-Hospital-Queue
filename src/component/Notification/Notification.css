@@ -1,0 +1,45 @@
+/* Notification.css */
+
+.notification {
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 250px;
+}
+
+.notification p {
+    margin: 0;
+}
+
+.notification button {
+    background: none;
+    border: none;
+    color: #721c24;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.notification-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.notification {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}

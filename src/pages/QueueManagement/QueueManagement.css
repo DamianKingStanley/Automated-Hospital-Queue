@@ -1,0 +1,90 @@
+.QueueManagementPage {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    padding: 50px;
+    overflow-x: auto;
+    /* Allow horizontal scrolling if content overflows */
+}
+
+.QueueManagementPage h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.QueueManagementPage table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    min-width: 100%;
+    /* Ensure the table takes up the full container width */
+    max-width: 100%;
+    /* Prevents the table from extending beyond the container */
+}
+
+.QueueManagementPage th,
+.QueueManagementPage td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px;
+    font-size: 16px;
+    word-wrap: break-word;
+    /* Break long words to prevent overflow */
+}
+
+.QueueManagementPage th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.QueueManagementPage tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.QueueManagementPage tr:hover {
+    background-color: #ddd;
+}
+
+.QueueManagementPage strong {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.QueueManagementPage ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.QueueManagementPage li {
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+}
+
+.QueueManagementPage li:last-child {
+    border-bottom: none;
+}
+
+
+/* Responsive adjustments */
+
+@media screen and (max-width: 980px) {
+    .QueueManagementPage {
+        width: 95%;
+        /* Increase width on smaller screens to improve usability */
+        padding: 20px;
+        /* Adjust padding for smaller screens */
+    }
+    .QueueManagementPage table th,
+    .QueueManagementPage table td {
+        font-size: 14px;
+        /* Reduce font size on smaller screens */
+        padding: 8px;
+        /* Reduce padding for smaller screens */
+    }
+    .QueueManagementPage li {
+        font-size: 16px;
+        /* Adjust font size for list items on smaller screens */
+    }
+}

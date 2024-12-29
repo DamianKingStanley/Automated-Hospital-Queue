@@ -1,0 +1,126 @@
+/* Navbar.css */
+
+.navbarsection {
+    padding: 10px 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.nav-lists {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.nav-lists h3 {
+    font-family: Impact, "Arial Narrow Bold", sans-serif;
+    color: #2c75ac;
+}
+
+.nav-lists a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+.nav-lists ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style-type: none;
+    margin-top: 8px;
+}
+
+.nav-lists li a {
+    background-color: #efefef;
+    padding: 5px 8px;
+    color: black;
+    border-radius: 8px;
+}
+
+.nav-lists li:hover a {
+    background-color: #2c75ac;
+    padding: 5px 8px;
+    color: white;
+    border-radius: 8px;
+}
+
+.nav-lists li.active a {
+    font-weight: bold;
+    border-bottom: 2px solid green;
+}
+
+.SLU {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+#loginBtn {
+    background-color: #2c75ac;
+    border: none;
+    pad: 10px;
+    width: 100px;
+    height: 35px;
+    color: white;
+    border-radius: 2px;
+}
+
+
+/* Dropdown styles */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.profileIconNav,
+.profilePictureNav {
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+#NavFaIcon {
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width: 980px) {
+    .navbarsection {
+        display: none;
+    }
+}

@@ -1,0 +1,153 @@
+.navbar {
+    display: none;
+}
+
+@media screen and (max-width: 980px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 10px;
+        font-family: "Times New Roman", Times, serif;
+    }
+    .navbar-brand {
+        font-size: 15px;
+        font-weight: bold;
+        color: #200788;
+        margin-top: 10px;
+    }
+    .navbar-brand a {
+        text-decoration: none;
+        color: #000000;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+    .navbar-brand h3 {
+        font-size: 20px;
+        color: #2c75ac;
+    }
+    .navbar-toggle {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .navbar-toggle-icon {
+        display: block;
+        width: 15px;
+        height: 15px;
+        margin: 4px 0;
+        transition: transform 0.3s ease;
+    }
+    .navbar-toggle.open .navbar-toggle-icon {
+        transform: rotate(90deg);
+    }
+    .navbar-nav {
+        /* display: none; */
+        position: absolute;
+        list-style: none;
+        transition: transform 0.3s ease;
+        padding: 0;
+        margin: 0;
+        left: -250px;
+        top: 100%;
+        transition: left 0.8s ease;
+    }
+    .navbar-nav.open {
+        background-color: #c2aed2;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        z-index: 1000;
+        height: 100vh;
+    }
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+    .navbar-nav .nav-link {
+        text-decoration: none;
+        background-color: #2c75ac;
+        color: white;
+        padding: 5px;
+        border-radius: 3px;
+        line-height: 40px;
+    }
+    .navbar-nav .nav-link:hover {
+        background-color: #ddd;
+    }
+    .dropdown-menu-container {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-toggle-phone {
+        cursor: pointer;
+    }
+    .dropdown-menu-phone {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 120px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    .dropdown-menu-phone li {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-toggle-phone:focus+.dropdown-menu-phone {
+        display: block;
+    }
+    .user-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: #333;
+        background-color: #2c75ac;
+        padding: 8px;
+        color: white;
+    }
+    .username {
+        margin-right: 10px;
+    }
+    .user-options {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .user-options li,
+    .user-options li a {
+        margin-right: 20px;
+        display: inline-block;
+        cursor: pointer;
+        color: black;
+        color: white;
+        text-decoration: none;
+    }
+    .user-options li:hover {
+        text-decoration: underline;
+    }
+    #LoginBtn {
+        border: none;
+        border-radius: 4px;
+        background-color: #2c75ac;
+        width: 100px;
+        padding: 5px;
+    }
+    #LoginBtn a {
+        color: white;
+        text-decoration: none;
+    }
+    #LoginBtn:hover,
+    #LoginBtn:after {
+        background-color: #200788;
+    }
+}

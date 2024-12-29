@@ -1,0 +1,90 @@
+.InSessionPatientsPage {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    overflow-x: auto;
+    /* Allow horizontal scrolling if content overflows */
+}
+
+.InSessionPatientsPage h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.InSessionPatientsPage table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    min-width: 100%;
+    /* Ensure the table takes up the full container width */
+    max-width: 100%;
+    /* Prevent the table from extending beyond the container */
+}
+
+.InSessionPatientsPage th,
+.InSessionPatientsPage td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px;
+    font-size: 16px;
+    word-wrap: break-word;
+    /* Break long words to prevent overflow */
+}
+
+.InSessionPatientsPage th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.InSessionPatientsPage tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.InSessionPatientsPage tr:hover {
+    background-color: #ddd;
+}
+
+.InSessionPatientsPage strong {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.InSessionPatientsPage ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.InSessionPatientsPage li {
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+}
+
+.InSessionPatientsPage li:last-child {
+    border-bottom: none;
+}
+
+
+/* Responsive adjustments */
+
+@media screen and (max-width: 980px) {
+    .InSessionPatientsPage {
+        width: 95%;
+        /* Increase width on smaller screens to improve usability */
+        padding: 10px;
+        /* Adjust padding for smaller screens */
+    }
+    .InSessionPatientsPage table th,
+    .InSessionPatientsPage table td {
+        font-size: 14px;
+        /* Reduce font size on smaller screens */
+        padding: 8px;
+        /* Reduce padding for smaller screens */
+    }
+    .InSessionPatientsPage li {
+        font-size: 16px;
+        /* Adjust font size for list items on smaller screens */
+    }
+}

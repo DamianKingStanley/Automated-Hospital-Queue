@@ -1,0 +1,123 @@
+/* DoctorInterface.css */
+
+.DoctorInterfacePage {
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: Arial, sans-serif;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.DoctorInterfacePage h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.DoctorInterfacePage .table-container {
+    overflow-x: auto;
+    /* Allow horizontal scrolling if necessary */
+}
+
+.DoctorInterfacePage .doctor-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.DoctorInterfacePage .doctor-table th,
+.DoctorInterfacePage .doctor-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.DoctorInterfacePage .doctor-table th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.DoctorInterfacePage .doctor-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.DoctorInterfacePage .doctor-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.DoctorInterfacePage .doctor-table button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    margin: 0 5px;
+}
+
+.DoctorInterfacePage .doctor-table button:hover {
+    opacity: 0.9;
+}
+
+.DoctorInterfacePage .doctor-table button:disabled {
+    cursor: not-allowed;
+    background-color: #bbb;
+    color: #fff;
+}
+
+.DoctorInterfacePage .doctor-table .set-available {
+    background-color: #27ae60;
+    /* Green for available */
+}
+
+.DoctorInterfacePage .doctor-table .set-not-available {
+    background-color: #e74c3c;
+    /* Red for not available */
+}
+
+@media screen and (max-width: 980px) {
+    .DoctorInterfacePage .DoctorInterfacePage {
+        padding: 10px;
+    }
+    .DoctorInterfacePage h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    .DoctorInterfacePage .error-message {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+    .DoctorInterfacePage .table-container {
+        overflow-x: auto;
+    }
+    .DoctorInterfacePage .doctor-table {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .DoctorInterfacePage .doctor-table th,
+    .DoctorInterfacePage .doctor-table td {
+        padding: 6px;
+    }
+    .DoctorInterfacePage .doctor-table button {
+        padding: 4px 8px;
+        font-size: 0.7rem;
+        margin: 0 3px;
+    }
+    .DoctorInterfacePage .doctor-table .set-available {
+        background-color: #27ae60;
+    }
+    .DoctorInterfacePage .doctor-table .set-not-available {
+        background-color: #e74c3c;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,66 @@
+.DoctorListPage {
+    padding: 20px;
+    z-index: 100;
+    color: white;
+    text-align: center;
+    overflow-x: auto;
+}
+
+.table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    /* Ensures smooth scrolling on iOS */
+}
+
+.doctor-table {
+    min-width: 100%;
+    /* Ensure the table takes up full width */
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    /* Prevents the table from extending beyond the container */
+}
+
+.doctor-table th,
+.doctor-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    word-wrap: break-word;
+    /* Breaks long words to prevent overflow */
+}
+
+.doctor-table th {
+    background-color: #f4f4f4;
+    color: black;
+    text-align: left;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+
+/* Responsive adjustments */
+
+@media screen and (max-width: 980px) {
+    .doctor-table th,
+    .doctor-table td {
+        padding: 6px;
+        /* Reduces padding on smaller screens */
+    }
+    .doctor-table th {
+        font-size: 14px;
+        /* Reduces font size for headers on smaller screens */
+    }
+    .doctor-table td {
+        font-size: 12px;
+        /* Reduces font size for cells on smaller screens */
+    }
+    /* Wrap the table within the screen */
+    .doctor-table {
+        min-width: 100%;
+        table-layout: auto;
+        /* Allows the table to shrink */
+    }
+}
